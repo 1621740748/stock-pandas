@@ -1,7 +1,7 @@
 from stock_pandas import StockDataFrame
 import pandas as pd
 tt=pd.read_csv('tencent.csv')
-stock = StockDataFrame(tt)
+stock = StockDataFrame(tt,date_column='time_key')
 #print(tt)
 #print(stock)
 d=stock['kdj.d']
