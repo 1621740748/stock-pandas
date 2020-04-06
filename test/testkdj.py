@@ -42,4 +42,5 @@ fig, axes = plt.subplots(2, 1)
 df[['close']].plot(ax=axes[0], grid=True, title=code)
 # 画 KDJ 曲线图
 dw[['slowk', 'slowd']].plot(ax=axes[1], grid=True)
+print(dw)
 plt.show()
